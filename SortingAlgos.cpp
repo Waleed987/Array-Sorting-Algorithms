@@ -3,6 +3,7 @@ using namespace std;
 
 class sortingAlgos {
 public:
+	//BUBBLE SORT , PASS AN ARRAY ALONG WITH ITS SIZE TO THIS FUNCTION
 	void bubblesort(int a[], int size) {
 		cout << endl;
 		cout << "Performing Bubble sort";
@@ -18,15 +19,7 @@ public:
 		printarr(a, size);
 	}
 
-	void printarr(int a[], int size) {
-		cout << endl;
-		cout << "Printing Array" << endl;
-		for (int i = 0; i < size;i++) {
-			cout << a[i] << " ";
-		}
-		cout << endl;
-	}
-
+	//INSERTION SORT , PASS AN ARRAY ALONG WITH ITS SIZE TO THIS FUNCTION
 	void insertionsort(int a[], int size) {
 		cout << endl;
 		cout << "Performing Insertion sort";
@@ -43,6 +36,7 @@ public:
 		printarr(a, size);
 	}
 
+	//SELECTION SORT , PASS AN ARRAY ALONG WITH ITS SIZE TO THIS FUNCTION
 	void selectionsort(int a[], int size) {
 		cout << endl;
 		cout << "Performing Selection sort";
@@ -62,8 +56,18 @@ public:
 		cout << endl;
 		printarr(a, size);
 	}
-};
 
+	//PRINTS THE ARRAY AFTER EACH SORTING ALGO CALL.
+	void printarr(int a[], int size) {
+		cout << endl;
+		cout << "Printing Array" << endl;
+		for (int i = 0; i < size;i++) {
+			cout << a[i] << " ";
+		}
+		cout << endl;
+	}
+};
+//TEST THE GIVEN ALGOS IN MAIN BY CALLING THEM THROUGH CLASS VARIABLE.
 int main() {
 	sortingAlgos sort;
 	int a[] = { 324,234,234,123,4,43,234,2,234,6,64,6,2,467,3,23,2};
